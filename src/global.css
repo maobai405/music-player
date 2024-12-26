@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .custom-container {
+    @apply flex-1 bg-black;
+  }
+
+  .custom-text {
+    @apply text-xl text-white;
+  }
+
+  .centeredRow {
+    @apply flex-row items-center justify-center;
+  }
+
+  .slider {
+    @apply h-2 rounded-2xl;
+  }
+
+  .itemSeparator {
+    @apply border-t-[0.5px] border-[#9ca3af] opacity-30;
+  }
+
+  .emptyContentText {
+    @apply mt-5 text-center text-xl text-[#9ca3af];
+  }
+
+  .emptyContentImage {
+    @apply mt-10 h-[200px] w-[200px] self-center opacity-30;
+  }
+}
